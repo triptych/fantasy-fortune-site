@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantasy Fortune App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="title-container">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" class="sword-icon">
+      <g fill="none" stroke="#fff" stroke-width="2">
+        <path d="M10,90 L50,10 L90,90 Z" />
+        <path d="M50,10 L50,90" />
+        <path d="M30,70 L70,70" />
+        <path d="M40,50 L60,50" />
+        <circle cx="50" cy="30" r="10" />
+      </g>
+    </svg>
+    <h1>Fantasy Fortune</h1>
+  </div>
+
+  <main>
+    <section class="fortune-generator">
+      <button id="fortune-button">Generate Fortune</button>
+      <div id="countdown-timer"></div>
+    </section>
+
+    <section class="fortune-display">
+      <h2>Your Fortune</h2>
+      <p id="fortune-message"></p>
+    </section>
+
+    <section class="fortune-history">
+      <h2>Previous Fortunes</h2>
+      <ul id="fortune-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Andrew Wooldridge. All rights reserved.</p>
+    <p>Visits: <span id="hit-count"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
